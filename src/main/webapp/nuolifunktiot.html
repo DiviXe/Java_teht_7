@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<p id="ilmo"></p>
+<script>
+//ilman parametreja
+function esimerkki_1(){
+	return "Moi 1";
+}
+let esimerkki_2 = function(){
+	return "Moi 2";
+}
+let esimerkki_3 = () => {
+	return "Moi 3";
+}
+let esimerkki_4 = () => "Moi 4";
+
+//Yhdella parametrilla
+function esimerkki_5(nimi){
+	return "Moi " + nimi;
+}
+let esimerkki_6 = function(nimi){
+	return "Moi " + nimi;
+}
+let esimerkki_7 = (nimi) => {
+	return "Moi " + nimi;
+}
+// sulkeet jos enemmän kuin 1 
+let esimerkki_8 = (nimi) => "Moi " + nimi;
+//yksi parametri
+let esimerkki_9 = nimi => "Moi " + nimi;
+
+let printer = document.getElementById("ilmo");
+printer.innerHTML=esimerkki_1()+"<br>";
+printer.innerHTML+=esimerkki_2()+"<br>";
+printer.innerHTML+=esimerkki_3()+"<br>";
+printer.innerHTML+=esimerkki_4()+"<br>";
+printer.innerHTML+=esimerkki_5("Aliisa")+"<br>";
+printer.innerHTML+=esimerkki_6("Bo")+"<br>";
+printer.innerHTML+=esimerkki_7("Cecilia")+"<br>";
+printer.innerHTML+=esimerkki_8("David")+"<br>";
+printer.innerHTML+=esimerkki_9("Emil")+"<br>";
+</script>
+</body>
+</html>
